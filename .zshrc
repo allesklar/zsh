@@ -3,7 +3,15 @@
 
 # TODO move to zsh repository
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/swamiatma/.oh-my-zsh"
+case "$OSTYPE" in
+  darwin*)
+    # MacOS
+    export ZSH="/Users/swamiatma/.oh-my-zsh"
+  ;;
+  linux*)
+    export ZSH="/Users/swamiatma/.oh-my-zsh"
+  ;;
+esac
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
