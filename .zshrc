@@ -3,7 +3,7 @@
 
 # TODO move to zsh repository
 # Path to your oh-my-zsh installation.
-export ZSH="~/.config/zshrc/.oh-my-zsh"
+export ZSH="/Users/swamiatma/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
