@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# TODO move to zsh repository
+# TODO remove oh-my-zsh and install needed plugins manually in zshrc dot repository
 # Path to your oh-my-zsh installation.
 case "$OSTYPE" in
   darwin*)
@@ -103,3 +103,6 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+# Do not show deprecated warnings in ruby/rails
+export RUBYOPT='-W:no-deprecated -W:no-experimental'
