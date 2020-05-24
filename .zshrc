@@ -78,7 +78,12 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 # When to use this line???????? I will enable it for now
-export ARCHFLAGS="-arch x86_64"
+case "$OSTYPE" in
+  darwin*)
+    # MacOS
+    export ARCHFLAGS="-arch x86_64"
+  ;;
+esac
 
 precmd() { print "" } # blank line before prompt
 PROMPT="%(?.%F{106}√.%F{160}?%?) %F{240}%m: %B%F{37}%~ %F{210}-> %b%f"
