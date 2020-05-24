@@ -105,4 +105,5 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Do not show deprecated warnings in ruby/rails
-export RUBYOPT='-W:no-deprecated -W:no-experimental'
+# This line might create problems with older Ruby versions
+# export RUBYOPT='-W:no-deprecated -W:no-experimental'
