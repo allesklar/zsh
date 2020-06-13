@@ -9,7 +9,7 @@ case "$OSTYPE" in
     export ZSH="/Users/swamiatma/.oh-my-zsh"
   ;;
   linux*)
-    export ZSH="/Users/swamiatma/.oh-my-zsh"
+    export ZSH="/home/deploy/.oh-my-zsh"
   ;;
 esac
 
