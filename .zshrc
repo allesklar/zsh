@@ -68,6 +68,14 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
+# Add zsh scripts to path
+case "$OSTYPE" in
+  darwin*)
+    # MacOS
+    export PATH="$HOME/Documents/coding/zsh/scripts:$PATH"
+  ;;
+esac
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
